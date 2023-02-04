@@ -1,28 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css"
- 
-</head>
-<body>
-  <section class="main">
-    <div class="content">
-      <img src="./images/image-qr-code.png">
-      <div class="info">
-        <h3>Improve your front-end skills by building projects</h3>
-        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-      </div>
-      
-    </div>
-
+@import url('https://fonts.google.com/specimen/Outfit');
+*{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400, 700;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:hsl(212, 45%, 89%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+}
+.content{
+    background-color: #fff;
+    width:19.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.7s ease;
+    flex-wrap: wrap;
+}
+.content img{
+    width: 100%;
+    border-radius: 10px;
+}
+.info {
+    text-align: center;
     
-  </section>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hidayet</a>.
-  </div>
-</body>
-</html>
+
+}
+.info h3{
+    color: hsl(218, 44%, 22%);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p{
+    color: hsl(220, 15%, 55%);
+}
+.attribution{
+    display: none;
+}
